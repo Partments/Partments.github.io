@@ -2,15 +2,36 @@
 <html>
 <head>
     <title>@louis vuitton 💎 ~ nigger.xyz</title>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="nigger.xyz">
     <meta property="og:url" content="https://nigger.xyz">
     <meta property="og:title" content="@louis vuitton 💎 ~ nigger.xyz">
     <script>
-        // Array of titles to cycle through
         const titles = ["@louis vuitton 💎", "dont skid this site!", "are you real?", "@drips was here?!", "How many titles?", "okay ill stop.", "KKunx is FAT!", "❤️ManiK❤️", "KKunx has rolls"];
     
-        // Function to change the title
         function changeTitle() {
             let index = 0;
             return function() {
@@ -19,8 +40,7 @@
             };
         }
     
-        // Call the function to change the title every second
-        setInterval(changeTitle(), 250);
+        setInterval(changeTitle(), 150);
     </script>
     </head>
     <body>
@@ -106,6 +126,39 @@
         animation: fadein 1s forwards;
     }
 
+    .glitter-text {
+        display: inline-block;
+        position: relative;
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    
+    .glitter-text::before,
+    .glitter-text::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #000000; /* Glitter color */
+        overflow: hidden;
+        animation: glitter 1s infinite linear alternate;
+    }
+    
+    @keyframes glitter {
+        0% {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+        20% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+    }
+    
     .glowing-text {
         color: white;
         text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
@@ -176,7 +229,7 @@
             <img src="files/profilepic.jpg" alt="Profile Picture">
         </div>
         <div id="username">louis vuitton 💎</div>
-        <div id="bio">My site is undownable. and KKUNX IS HUMONGOUS also ManiK❤️
+        <div id="bio"></div>My site is undownable. and KKUNX IS HUMONGOUS also ManiK❤️
         </div>
 
         <a href="https://actavis.cc" class="social-icon"><img src="icons/globe.png"/></a>
