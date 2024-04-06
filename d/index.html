@@ -44,7 +44,7 @@
     </script>
     </head>
     <body>
-    <meta property="og:description" content="100% fent, 0% trans rights">
+    <meta property="og:description" content="100% fent, 0% trans rights>
     <meta property="og:image" content="nigger.xyz/d/files/profilepic.jpg">
 </head>
 
@@ -232,84 +232,20 @@
         <div id="bio"></div>@fentposers on cord
         </div>
 
-        <!DOCTYPE html>
-        <html lang="en">
-        
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Background</title>
-            <style>
-                body, html {
-                    margin: 0;
-                    padding: 0;
-                    height: 100%;
-                    overflow: hidden;
-                }
-        
-                .bg {
-                    /* Set the background image URL */
-                    background-image: url('https://i.imgur.com/nu3K5Og.png');
-                    /* Ensure the background image covers the entire page */
-                    background-size: cover;
-                    /* Center the background image */
-                    background-position: center;
-                    /* Fixed position to cover the whole page */
-                    position: fixed;
-                    /* Fill the entire page */
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    /* Z-index to ensure the content is above the background */
-                    z-index: -1;
-                }
-        
-                #button {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    padding: 10px 20px;
-                    font-size: 1.5rem;
-                    background-color: #333;
-                    color: white;
-                    border: none;
-                    cursor: pointer;
-                    z-index: 1;
-                }
-        
-                #blur-box {
-                    display: none;
-                    position: fixed;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    background-color: rgba(0, 0, 0, 0.5);
-                    z-index: 2;
-                }
-            </style>
-        </head>
-        
-        <body>
-            <div class="bg"></div>
-            <button id="button">Play</button>
-            <div id="blur-box"></div>
-        
-            <script>
-                document.getElementById("button").addEventListener("click", function () {
-                    var button = this;
-                    button.style.animation = "fadeout 1s forwards";
-        
-                    // Replace this with your image element or background div
-                    document.querySelector(".bg").style.display = "none";
-                });
-            </script>
-            <audio controls>
-                <source src="song\music.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-              </audio>                      
+    <video id="video-background" loop>
+        <source src="files/video.mp4" type="video/mp4">
+    </video>
+
+    <script>
+        document.getElementById("button").addEventListener("click", function () {
+            var button = this;
+            button.style.animation = "fadeout 1s forwards";
+
+            var bgAudio = document.getElementById("video-background"); 
+            document.getElementById("blur-box").style.display = "block";
+            document.getElementById("video-background").style.display = "block";
+            bgAudio.play();
+        });
+    </script>
 </body>
 </html>
