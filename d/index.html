@@ -152,6 +152,37 @@
         animation: glitter 1s infinite linear alternate;
     }
     
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .snow-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+    
+    @keyframes snowflake-fall {
+        from {
+            transform: translateY(-10%);
+        }
+        to {
+            transform: translateY(110%);
+        }
+    }
+    
+    .snowflake {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: #fff;
+        animation: snowflake-fall 5s linear infinite;
+    }
+    
     @keyframes glitter {
         0% {
             transform: translateY(-50px);
@@ -253,6 +284,16 @@
             document.getElementById("video-background").style.display = "block";
             bgAudio.play();
         });
+    </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm-min.js"></script>
+    <script data-react-helmet="true">
+        snowStorm.snowColor = '#000000';
+        snowStorm.flakesMaxActive = 165;
+        snowStorm.useTwinkleEffect = true;
+        snowStorm.autoStart = true;
+        snowStorm.freezeOnBlur = false;
+        snowStorm.excludeMobile = false;
     </script>
 </body>
 </html>
