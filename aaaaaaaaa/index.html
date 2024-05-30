@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stelle</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="./assets/all.js" defer></script>
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      .background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        object-fit: cover;
+      }
+      .background {
+        position: relative;
+        z-index: 1;
+      }
+      main {
+        position: relative;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <video id="background-video" class="background-video" autoplay loop muted>
+      <source src="files\Waltermorphosis.mp4" type="video/mp4" />
+      Your browser is a fucking nigger, and cant play vids LMAOOOOOOOOOOOOO NIGGERBROWSER!!
+    </video>
+    <div class="background">
+      <div class="space stars1"></div>
+      <div class="space stars2"></div>
+      <div class="space stars3"></div>
+    </div>
+    <main>
+      <div class="header">
+        <div class="discordProfile">
+          <iframe
+            src="https://lanyard.cnrad.dev/api/370601668339040268?borderRadius=5px&idleMessage=Eating Doritos while skids try to skid my site! >.<&bg=a&animated=true"
+          ></iframe>
+        </div>
+        <p class="emojis">aaaaaaaaaa</p>
+        <div class="icons">
+          <a
+            href="https://discord.com/users/370601668339040268"
+            target="_blank"
+          >
+            <i class="fab fa-discord"></i>
+          </a>
+      </div>
+    </main>
+    <script>
+      window.addEventListener('load', () => {
+        const video = document.getElementById('background-video');
+        video.play().then(() => {y
+          setTimeout(() => {
+            video.muted = false;
+            video.volume = 1.0;
+          }, 10);
+        }).catch((error) => {
+          console.error('Autoplay was prevented, you fat black nigger! TURN IT ON!:', error);
+        });
+      });
+    </script>
+  </body>
+</html>
