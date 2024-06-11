@@ -5,6 +5,15 @@
 <html>
 <head>
 	<title>Dont | SKID ME!</title>
+	<script>
+        var titles = ["nigger.xyz?", "are you real?", "die?", "npc?", "whos drips?", "rando?", "drone?", "my dicks bigger, skidder", "I am your master", "ass, ass, ass", "I hate all niggers", "I am the master", "bamz the nigger?", "Sin cant troll?", "madara the fag?", "savvy the geezer?", "smokin ur deads?", "private biolink?", "who coded me?", "hijacked drips acc?", "stole ur bitch Zaiden?", "/ivi better!"];
+        var currentTitleIndex = 0;
+        function changeTitle() {
+            document.title = titles[currentTitleIndex];
+            currentTitleIndex = (currentTitleIndex + 1) % titles.length;
+        }
+        setInterval(changeTitle, 150);
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta property="og:title" content="nigger.xyz">
     <meta property="og:description" content="Private Biolink Service!">
