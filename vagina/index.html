@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
+<html>
+<head>
+    <title>@d ~ nigger.xyz</title>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="nigger.xyz">
+    <meta property="og:url" content="https://nigger.xyz">
+    <meta property="og:title" content="@d ~ nigger.xyz">
+    <script>
+        const titles = ["@d💎", "dont skid this site!", "are you real!?", "drips was here?!"];
+    
+        function changeTitle() {
+            let index = 0;
+            return function() {
+                document.title = titles[index];
+                index = (index + 1) % titles.length;
+            };
+        }
+    
+        setInterval(changeTitle(), 150);
+    </script>
+    </head>
+    <body>
+    <meta property="og:description" content="100% fent, 0% trans rights">
+    <meta property="og:image" content="files/profilepic.jpg">
+</head>
+
+<style>
+    html {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    body {
+        background-color:#060707;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+        text-align: center;
+        color: white;
+    }
+
+    #blur-box {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 31px;
+        width: 35%;
+        background-color: rgba(0, 0, 0, 0);
+        backdrop-filter: blur(0px);
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        animation: fadein 1s forwards;
+    }
+
+    #profile-picture {
+        width: 100px;
+        height: 100px;
+        background-color: #ffffff00;
+        border-radius: 50%;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+
+    #profile-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #username {
+        font-size: 35px;
+        margin-top: 130px;
+        text-shadow: 0 0 15px rgb(255, 255, 255);
+    }
+
+    #bio {
+        font-size: 18px;
+        margin-top: 10px;
+        text-shadow: 0 0 15px rgb(255, 255, 255);
+    }
+
+    #video-background {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        animation: fadein 1s forwards;
+    }
+
+    .glitter-text {
+        display: inline-block;
+        position: relative;
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    
+    .glitter-text::before,
+    .glitter-text::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #000000; /* Glitter color */
+        overflow: hidden;
+        animation: glitter 1s infinite linear alternate;
+    }
+    
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .snow-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+    
+    @keyframes glitter {
+        0% {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+        20% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+    }
+    
+    .glowing-text {
+        color: white;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+
+    .next {
+        top: 50%;
+        left: 50%;
+        color: #fff;
+        position: absolute;
+        font-weight: normal;
+        font-size: 20px;
+        transform: translate(-50%, -50%);
+        font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+    }
+
+    .social-icon {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        margin: 10px;
+        font-size: 34px;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+        transition: transform 0.3s ease-in-out; 
+    }
+
+    .discord-stuff {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        margin: 10px;
+        font-size: 34px;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+        transition: transform 0.3s ease-in-out; 
+    }
+
+    .social-icon:hover {
+        color: #ffffff;
+        transform: scale(1.2);
+    }
+
+    @keyframes fadeout {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+<body>
+    <div id="button"><b class="next glowing-text">click 2 be sigma skibidi!</b></div>
+
+    <div id="blur-box">
+        <div id="profile-picture">
+            <img src="files/lil-peep.gif" alt="Profile Picture">
+        </div>
+        <div id="username">reaperjr420</div>
+        <div id="bio"></div>vagina anal sex, ysc on top!</div>
+
+    <video id="video-background" loop>
+        <source src="files/video.mp4" type="video/mp4">
+        <div id="snow"></div>
+  <script>
+document.addEventListener('DOMContentLoaded', function(){
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+      script.onload = function(){
+        particlesJS("snow", {
+          "particles": {
+            "number": {
+              "value": 100,
+              "density": {
+                "enable": true,
+                "value_area": 900
+              }
+            },
+            "color": {
+              "value": "#ffffff"
+            },
+            "opacity": {
+              "value": 1,
+              "random": false,
+              "anim": {
+                "enable": false
+              }
+            },
+            "size": {
+              "value": 2.3,
+              "random": true,
+              "anim": {
+                "enable": false
+              }
+            },
+            "line_linked": {
+              "enable": false
+            },
+            "move": {
+              "enable": true,
+              "speed": 5,
+              "direction": "bottom",
+              "random": true,
+              "straight": true,
+              "out_mode": "out",
+              "bounce": true,
+              "attract": {
+                "enable": true,
+                "rotateX": 300,
+                "rotateY": 2000
+              }
+            },
+            "interactivity": {
+              "events": {
+                "onhover": {
+                  "enable": false
+                },
+                "onclick": {
+                  "enable": false
+                },
+                "resize": false
+              }
+            },
+            "retina_detect": true
+          }
+        });
+      }
+      document.head.append(script);
+    });
+</script>
+    </video>
+
+    <script>
+        document.getElementById("button").addEventListener("click", function () {
+            var button = this;
+            button.style.animation = "fadeout 1s forwards";
+
+            var bgAudio = document.getElementById("video-background"); 
+            document.getElementById("blur-box").style.display = "block";
+            document.getElementById("video-background").style.display = "block";
+            bgAudio.play();
+        });
+    </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm-min.js"></script>
+    <script data-react-helmet="true">
+        snowStorm.snowColor = '#FFFFF';
+        snowStorm.flakesMaxActive = 165;
+        snowStorm.useTwinkleEffect = true;
+        snowStorm.autoStart = true;
+        snowStorm.freezeOnBlur = false;
+        snowStorm.excludeMobile = false;
+    </script>
+</body>
+</html>
