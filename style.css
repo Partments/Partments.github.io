@@ -553,6 +553,32 @@ padding-left:10px;
   }
 }
 
+.text4 {
+  color: #fff;
+  text-transform: none;
+  text-align: center;
+  margin-top:1vh;
+
+}
+
+.text3 {
+color: #fff;
+text-transform: none;
+text-align: center;
+margin-top:45vh;
+
+}
+
+.discord-stuff {
+  -webkit-animation: text-flicker-out-glow 2.5s linear infinite both;
+      animation: text-flicker-out-glow 2.5s linear infinite both;
+          position: absolute;
+          top: 58%;
+          left: 50.5%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          z-index: 99;
+}
 .text2 {
   -webkit-animation: text-flicker-out-glow 2.5s linear infinite both;
       animation: text-flicker-out-glow 2.5s linear infinite both;
@@ -560,7 +586,9 @@ padding-left:10px;
         text-transform: none;
         text-align: center;
         margin-top:1vh;
-    
+        font-family: 'HelpMe';
+        src: url('0/assests/misc/HelpMe.ttf') format('truetype');
+        z-index: 99;
   }
 
 
@@ -572,6 +600,7 @@ padding-left:10px;
       text-transform: none;
       text-align: center;
       margin-top:45vh;
+      z-index: 99;
   
 }
 
