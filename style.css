@@ -6,6 +6,11 @@
     font-weight: normal;
     font-style: normal;
 
+@font-face {
+  font-family: HelpMe;
+  src: url('0/assests/misc/HelpMe.ttf') format('truetype');
+}
+
 }
 body {
   background-color: #000000;
